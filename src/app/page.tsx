@@ -8,10 +8,13 @@ export default async function Home() {
     const isDataEmpty = !Array.isArray(posts) || posts.length < 1 || !posts;
 
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">
-            <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
+        <main className="flex min-h-screen flex-col items-center p-0">
+            
+            <div className="w-full p-2">
+                <h1 className="">Htmyell Design & Development</h1>
+            </div>
 
-                <h1 className="title">Htmyell Design & Development</h1>
+            <div className="items-center justify-between font-mono text-sm lg:flex">
 
                 { !isDataEmpty ? 
                     <div className="grid">
