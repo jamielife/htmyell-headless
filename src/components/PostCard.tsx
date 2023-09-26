@@ -11,8 +11,8 @@ export interface PostProps {
 
 export default function PostCard ({ post }:PostProps){
     return (
-        <Link href={post.uri} className={"bg-slate-100 rounded-xl p-8 dark:bg-secondary-orange m-2"}>
-            <h3>{post.title} &rarr;</h3>
+        <Link href={post.uri} className={"w-96 rounded-xl p-8 m-2 bg-gradient-to-r from-cyan-500 to-blue-500"}>
+            <h3 className="text-white">{post.title} &rarr;</h3>
         </Link>
     )
 }

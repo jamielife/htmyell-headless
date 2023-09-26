@@ -1,7 +1,6 @@
 import { getPosts } from "@/services";
 import PostCard from "@/components/PostCard";
 
-
 export default async function Home() {
     const posts = await getPosts();
     //console.log(posts);
